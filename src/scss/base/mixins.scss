@@ -1,0 +1,19 @@
+@import 'variables';
+
+@mixin padding-inline {
+  padding-inline: $padding-inline;
+}
+
+@mixin grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+@mixin hover-scale {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

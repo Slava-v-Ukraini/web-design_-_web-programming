@@ -1,0 +1,23 @@
+$padding-inline: 80px;
+
+// Кольорова палітра (з Design System)
+$color-bg-primary: #0B0F19;
+$color-bg-elevated: #0F1323;
+$color-surface-card: rgba(255, 255, 255, 0.05);
+$color-surface-card-hover: rgba(255, 255, 255, 0.1);
+$color-border: rgba(255, 255, 255, 0.1);
+
+$color-accent-copper: #C58361;
+$color-accent-hover: #102239;
+
+$color-text-primary: #FFFFFF;
+$color-text-secondary: rgba(255, 255, 255, 0.6);
+$color-text-muted: rgba(255, 255, 255, 0.4);
+
+// Типографіка
+$font-family-base: 'Montserrat', sans-serif;
+
+// Розміри контейнера та відступи
+$container-max-width: 1200px;
+$container-padding: 20px;
+$border-radius-base: 8px;

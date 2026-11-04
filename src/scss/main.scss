@@ -1,0 +1,27 @@
+@import "./base/variables";
+@import "./base/mixins";
+
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/formats";
+@import "./blocks/brands";
+@import "./blocks/catalog";
+@import "./blocks/footer";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: $color-bg-primary;
+  color: $color-text-primary;
+  font-family: $font-family-base;
+}

@@ -1,0 +1,54 @@
+.hero {
+  height: 100vh;
+  background-image: url("../images/hero-section.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    @include grid-12;
+    @include padding-inline;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__content {
+    grid-column: -5 / -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: $color-accent-copper;
+    max-width: 200px;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $color-accent-copper;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: calc($border-radius-base / 2);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-accent-hover;
+    }
+  }
+}

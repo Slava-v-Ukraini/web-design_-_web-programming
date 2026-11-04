@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M-Corner</title>
+
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top-bar top-bar container">
+        <a href="#" class="header__logo">
+          <img
+            src="./images/nav-logo-white.png"
+            alt="M-Corner Logo"
+            class="header__logo-img"
+          />
+        </a>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#catalog" class="nav__link">каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="#brands" class="nav__link">бренди</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__socials socials">
+          <a
+            href="https://instagram.com"
+            class="socials__link socials__link--insta"
+            aria-label="Instagram"
+          >
+            <img
+              src="./images/icons/InstagramLogo.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+          <a
+            href="https://t.me"
+            class="socials__link socials__link--telegram"
+            aria-label="Telegram"
+          >
+            <img
+              src="./images/icons/TelegramLogo.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+          <a
+            href="https://facebook.com"
+            class="socials__link socials__link--facebook"
+            aria-label="Facebook"
+          >
+            <img
+              src="./images/icons/FacebookLogo.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">Твоя територія догляду</h1>
+            <p class="hero__subtitle">SIMPLE. MASCULINE. ESSENTIAL</p>
+            <a href="#catalog" class="hero__btn btn">До каталогу</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="formats">
+        <div class="formats__container container">
+          <h2 class="formats__title title">Один бренд — два формати</h2>
+
+          <div class="formats__list">
+            <article class="formats__card">
+              <div class="formats__card-icon">
+                <img
+                  src="./images/icons/Storefront.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 class="formats__card-title">Фізичний concept-store</h3>
+              <p class="formats__card-desc">
+                Флагман для демонстрацій, тестування та персональних
+                консультацій.
+              </p>
+            </article>
+            <article class="formats__card">
+              <div class="formats__card-icon">
+                <img
+                  src="./images/icons/Laptop.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 class="formats__card-title">Онлайн-платформа</h3>
+              <p class="formats__card-desc">
+                Інтернет-магазин з доставкою та підписками
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="catalog">
+        <div class="catalog__container container">
+          <h2 class="catalog__title title">обери свій догляд</h2>
+
+          <div class="catalog__cards">
+            <article class="catalog-card catalog-card--beard">
+              <div class="catalog-card__content">
+                <h3 class="catalog-card__title">для бороди</h3>
+                <p class="catalog-card__desc">Олії, бальзами, шампуні</p>
+                <div class="catalog-card__footer">
+                  <span class="catalog-card__price">від 350 грн</span>
+                  <a
+                    href="#"
+                    class="catalog-card__btn"
+                    aria-label="Перейти до каталогу засобів для бороди"
+                  >
+                    <img
+                      src="./images/icons/ArrowRight.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card catalog-card--hair">
+              <div class="catalog-card__content">
+                <h3 class="catalog-card__title">стайлінг для волосся</h3>
+                <p class="catalog-card__desc">Пасти, глини</p>
+                <div class="catalog-card__footer">
+                  <span class="catalog-card__price">від 400 грн</span>
+                  <a
+                    href="#"
+                    class="catalog-card__btn"
+                    aria-label="Перейти до каталогу засобів для волосся"
+                  >
+                    <img
+                      src="./images/icons/ArrowRight.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="catalog-card catalog-card--accessories">
+              <div class="catalog-card__content">
+                <h3 class="catalog-card__title">аксесуари та набори</h3>
+                <p class="catalog-card__desc">Гребінці, набори</p>
+                <div class="catalog-card__footer">
+                  <span class="catalog-card__price">від 500 грн</span>
+                  <a
+                    href="#"
+                    class="catalog-card__btn"
+                    aria-label="Перейти до каталогу аксесуарів"
+                  >
+                    <img
+                      src="./images/icons/ArrowRight.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="brands" class="brands">
+        <div class="brands__container container">
+          <h2 class="brands__title title">наші партнери</h2>
+          <ul class="brands__list">
+            <li class="brands__item">
+              <a href="#catalog" class="brands__link">
+                <img
+                  src="./images/brands/american-crew_logo.png"
+                  alt="Логотип бренду American Crew"
+                  class="brands__img"
+                />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a href="#catalog" class="brands__link">
+                <img
+                  src="./images/brands/wahl_logo.png"
+                  alt="Логотип бренду Wahl"
+                  class="brands__img"
+                />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a href="#catalog" class="brands__link">
+                <img
+                  src="./images/brands/uppercut-deluxe_logo.png"
+                  alt="Логотип бренду Uppercut Deluxe"
+                  class="brands__img"
+                />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a href="#catalog" class="brands__link">
+                <img
+                  src="./images/brands/proraso_logo.png"
+                  alt="Логотип бренду Proraso"
+                  class="brands__img"
+                />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a href="#catalog" class="brands__link">
+                <img
+                  src="./images/brands/reuzel_logo.png"
+                  alt="Логотип бренду Reuzel"
+                  class="brands__img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer">
+      <div class="footer__container container">
+        <div class="footer__heading">
+          <a href="#" class="footer__logo">
+            <img
+              src="./images/nav-logo.svg"
+              class="footer__img"
+              alt="M-Corner Logo"
+            />
+          </a>
+          <p class="footer__subtitle">simple. masculine. essential.</p>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__info">
+            <h3 class="footer__info-title">інформація</h3>
+            <a href="#payment" class="footer__info-text">Оплата та доставка</a>
+            <a href="#exchange" class="footer__info-text"
+              >Обмін та повернення</a
+            >
+            <a href="#agreement" class="footer__info-text">Договір оферти</a>
+          </div>
+
+          <div class="footer__contacts">
+            <h3 class="footer__contacts-title">контакти</h3>
+            <a
+              href="tel:+380991837500"
+              class="footer__contacts-text footer__contacts-text--phone"
+              >+380991837500</a
+            >
+            <a
+              href="mailto:m.corner.ua@gmail.com"
+              class="footer__contacts-text footer__contacts-text--email"
+              >m.corner.ua@gmail.com</a
+            >
+            <div class="footer__socials socials">
+              <a
+                href="https://instagram.com"
+                class="socials__link socials__link--insta"
+                aria-label="Instagram"
+              >
+                <img
+                  src="./images/icons/InstagramLogo.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                href="https://t.me"
+                class="socials__link socials__link--telegram"
+                aria-label="Telegram"
+              >
+                <img
+                  src="./images/icons/TelegramLogo.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+              <a
+                href="https://facebook.com"
+                class="socials__link socials__link--facebook"
+                aria-label="Facebook"
+              >
+                <img
+                  src="./images/icons/FacebookLogo.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
