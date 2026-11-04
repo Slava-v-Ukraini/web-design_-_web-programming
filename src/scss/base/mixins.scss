@@ -1,7 +1,17 @@
 @import 'variables';
 
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
 @mixin padding-inline {
   padding-inline: $padding-inline;
+
+  @include mobile {
+    padding-inline: 16px;
+  }
 }
 
 @mixin grid-12 {

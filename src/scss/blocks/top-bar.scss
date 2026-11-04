@@ -1,0 +1,22 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__logo {
+    width: 178px;
+    display: block;
+
+    @include mobile {
+      width: 150px;
+    }
+
+    &-img {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

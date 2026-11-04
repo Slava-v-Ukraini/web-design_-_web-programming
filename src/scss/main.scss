@@ -1,7 +1,9 @@
 @import "./base/variables";
 @import "./base/mixins";
 
+@import "./blocks/top-bar";
 @import "./blocks/header";
+@import "./blocks/menu";
 @import "./blocks/hero";
 @import "./blocks/formats";
 @import "./blocks/brands";
@@ -26,8 +28,17 @@ body {
   font-family: $font-family-base;
 }
 
+html:has(.menu:target),
+body:has(.menu:target) {
+  overflow: hidden;
+}
+
 .container {
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 $container-padding;
+
+  @include mobile {
+    padding: 0 16px;
+  }
 }

@@ -1,0 +1,191 @@
+.footer {
+  border-top: 1px solid $color-border;
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  @include mobile {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    @include padding-inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile {
+      gap: 36px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+
+    @include mobile {
+      gap: 12px;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__img {
+    max-width: 486px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+    @include mobile {
+      max-width: 278px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-text-secondary;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+
+    @include mobile {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+    @include mobile {
+      align-items: center;
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $color-text-primary;
+      letter-spacing: 3.2px;
+      margin-bottom: 6px;
+
+      @include mobile {
+        font-size: 15px;
+        letter-spacing: 2.4px;
+      }
+    }
+
+    &-text {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: $color-text-secondary;
+      letter-spacing: 0.8px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+
+    @include mobile {
+      align-items: center;
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $color-text-primary;
+      letter-spacing: 3.2px;
+      margin-bottom: 6px;
+
+      @include mobile {
+        font-size: 15px;
+        letter-spacing: 2.4px;
+      }
+    }
+
+    &-text {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: $color-text-secondary;
+      letter-spacing: 0.8px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+
+      &--email {
+        text-transform: lowercase;
+      }
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 6px;
+
+    @include mobile {
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .socials__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      @include hover-scale;
+
+      img {
+        width: 32px;
+        height: 32px;
+        display: block;
+      }
+    }
+  }
+}

@@ -5,28 +5,27 @@
   left: 0;
   z-index: 10;
   width: 100%;
+  background: linear-gradient(0deg, #03030300 0%, #030303 100%);
 
-  &__top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background: linear-gradient(0deg, #03030300 0%, #030303 100%);
-
-    @include padding-inline;
+  @include mobile {
+    background: #030303e6;
+    border-bottom: 1px solid $color-border;
   }
 
-  &__logo {
-    width: 178px;
-    display: block;
-    &-img {
-      box-sizing: border-box;
-      width: 100%;
+  &__top-bar {
+    height: 80px;
+
+    @include mobile {
+      height: 72px;
     }
   }
 
   &__nav {
     display: flex;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__socials {
@@ -37,6 +36,31 @@
       display: inline-flex;
 
       @include hover-scale;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      display: flex;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      display: block;
     }
   }
 }

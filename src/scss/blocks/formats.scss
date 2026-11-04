@@ -1,6 +1,11 @@
 .formats {
-  min-height: 80vh;
   padding-top: 120px;
+
+  @include mobile {
+    min-height: auto;
+    padding-top: 64px;
+    padding-bottom: 40px;
+  }
 
   &__container {
     @include padding-inline;
@@ -10,13 +15,22 @@
 
     height: 100%;
     align-items: center;
+
+    @include mobile {
+      gap: 24px;
+    }
   }
 
   &__list {
     @include grid-12;
     width: 100%;
-    
     gap: 24px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__title {
@@ -26,11 +40,15 @@
     letter-spacing: 0.1em;
     color: $color-text-primary;
     text-align: center;
+
+    @include mobile {
+      font-size: 24px;
+      letter-spacing: 0.08em;
+    }
   }
 
   &__card {
     grid-column: span 6;
-
     min-height: 360px;
 
     display: flex;
@@ -45,9 +63,17 @@
     border-radius: $border-radius-base;
 
     transition: all 0.3s ease;
+
     &:hover {
       background-color: $color-surface-card-hover;
       border-color: $color-accent-copper;
+    }
+
+    @include mobile {
+      grid-column: auto;
+      min-height: auto;
+      height: 300px;
+      padding: 32px 20px;
     }
   }
 
@@ -60,6 +86,15 @@
       width: 40px;
       height: 40px;
     }
+
+    @include mobile {
+      margin-bottom: 16px;
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
 
   &__card-title {
@@ -69,6 +104,11 @@
     letter-spacing: 0.05em;
     color: $color-text-primary;
     margin-bottom: 16px;
+
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
   }
 
   &__card-desc {
@@ -76,5 +116,9 @@
     line-height: 1.5;
     color: $color-text-secondary;
     max-width: 380px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }

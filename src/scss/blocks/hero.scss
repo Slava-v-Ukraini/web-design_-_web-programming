@@ -3,12 +3,41 @@
   background-image: url("../images/hero-section.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #00000000 0%, #0b0f19 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @include mobile {
+    height: auto;
+    min-height: 580px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    &::before {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, #0b0f19 100%);
+    }
+  }
 
   &__container {
     @include grid-12;
     @include padding-inline;
     height: 100%;
     align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__content {
@@ -19,6 +48,13 @@
     align-items: flex-start;
     gap: 20px;
     text-transform: uppercase;
+
+    @include mobile {
+      grid-column: auto;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &__title {
@@ -27,6 +63,12 @@
     line-height: 110%;
     letter-spacing: 0.1em;
     color: #ffffff;
+
+    @include mobile {
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+    }
   }
 
   &__subtitle {
@@ -35,6 +77,12 @@
     letter-spacing: 0.12em;
     color: $color-accent-copper;
     max-width: 200px;
+
+    @include mobile {
+      max-width: none;
+      font-size: 15px;
+      letter-spacing: 0.08em;
+    }
   }
 
   &__btn {

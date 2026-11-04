@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -19,11 +19,11 @@
   <body>
     <header class="header">
       <div class="header__top-bar top-bar container">
-        <a href="#" class="header__logo">
+        <a href="#" class="top-bar__logo">
           <img
             src="./images/nav-logo-white.png"
             alt="M-Corner Logo"
-            class="header__logo-img"
+            class="top-bar__logo-img"
           />
         </a>
 
@@ -79,8 +79,122 @@
             />
           </a>
         </div>
+        <a href="#menu" class="header__burger" aria-label="Відкрити меню">
+          <img
+            src="./images/icons/menu.svg"
+            alt=""
+            aria-hidden="true"
+            class="header__burger-icon"
+          />
+        </a>
       </div>
     </header>
+
+    <aside class="menu" id="menu">
+      <div class="menu__container">
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo">
+            <img
+              src="./images/nav-logo-white.png"
+              alt="M-Corner Logo"
+              class="top-bar__logo-img"
+            />
+          </a>
+          <a href="#" class="menu__close" aria-label="Закрити меню">
+            <span class="menu__close-icon" aria-hidden="true">✕</span>
+          </a>
+        </div>
+
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="#" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ГОЛОВНА</span>
+                  <span class="menu__link-subtitle">ПОЧАТОК</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ПРО НАС</span>
+                  <span class="menu__link-subtitle">НАША ФІЛОСОФІЯ</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ПОСЛУГИ</span>
+                  <span class="menu__link-subtitle">CONCEPT-STORE & BARBER</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#catalog" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ДЛЯ БОРОДИ</span>
+                  <span class="menu__link-subtitle">КАТАЛОГ ДОГЛЯДУ</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">КОНТАКТИ</span>
+                  <span class="menu__link-subtitle">ЗВ'ЯЗОК ТА ЛОКАЦІЯ</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__footer">
+          <a href="tel:+380991837500" class="menu__phone">+38 099 123 45 67</a>
+          <div class="menu__socials socials">
+            <a
+              href="https://instagram.com"
+              class="socials__link socials__link--insta"
+              aria-label="Instagram"
+            >
+              <img
+                src="./images/icons/InstagramLogo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://t.me"
+              class="socials__link socials__link--telegram"
+              aria-label="Telegram"
+            >
+              <img
+                src="./images/icons/TelegramLogo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://facebook.com"
+              class="socials__link socials__link--facebook"
+              aria-label="Facebook"
+            >
+              <img
+                src="./images/icons/FacebookLogo.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <main class="main">
       <section class="hero">
@@ -259,7 +373,7 @@
         <div class="footer__heading">
           <a href="#" class="footer__logo">
             <img
-              src="./images/nav-logo.svg"
+              src="./images/nav-logo-white.png"
               class="footer__img"
               alt="M-Corner Logo"
             />
