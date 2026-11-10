@@ -76,7 +76,8 @@
     transition: opacity 0.3s ease;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     transform: translateY(-4px);
     border-color: $color-accent-copper;
   }
@@ -159,6 +160,13 @@
     }
 
     &:hover {
+      transform: scale(1.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-accent-copper;
+      outline-offset: 4px;
+      border-radius: 50%;
       transform: scale(1.1);
     }
   }

@@ -6,8 +6,10 @@
 @import "./blocks/menu";
 @import "./blocks/hero";
 @import "./blocks/formats";
-@import "./blocks/brands";
 @import "./blocks/catalog";
+@import "./blocks/comparison";
+@import "./blocks/booking";
+@import "./blocks/brands";
 @import "./blocks/footer";
 
 
@@ -19,10 +21,19 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
 html,
 body {
   width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
   background-color: $color-bg-primary;
   color: $color-text-primary;
   font-family: $font-family-base;

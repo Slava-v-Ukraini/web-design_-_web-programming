@@ -36,10 +36,10 @@
               <a href="#catalog" class="nav__link">каталог</a>
             </li>
             <li class="nav__item">
-              <a href="#brands" class="nav__link">бренди</a>
+              <a href="#booking" class="nav__link">запис</a>
             </li>
             <li class="nav__item">
-              <a href="#contacts" class="nav__link">контакти</a>
+              <a href="#brands" class="nav__link">бренди</a>
             </li>
           </ul>
         </nav>
@@ -137,8 +137,26 @@
             <li class="menu__item">
               <a href="#catalog" class="menu__link">
                 <div class="menu__link-content">
-                  <span class="menu__link-title">ДЛЯ БОРОДИ</span>
-                  <span class="menu__link-subtitle">КАТАЛОГ ДОГЛЯДУ</span>
+                  <span class="menu__link-title">КАТАЛОГ</span>
+                  <span class="menu__link-subtitle">ПРОДУКЦІЯ ТА НАБОРИ</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#comparison" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ГІД ПО ЗАСОБАХ</span>
+                  <span class="menu__link-subtitle">ПОРІВНЯЛЬНА ТАБЛИЦЯ</span>
+                </div>
+                <span class="menu__link-arrow" aria-hidden="true">›</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#booking" class="menu__link">
+                <div class="menu__link-content">
+                  <span class="menu__link-title">ЗАПИС</span>
+                  <span class="menu__link-subtitle">КОНСУЛЬТАЦІЯ ТА ВІЗИТ</span>
                 </div>
                 <span class="menu__link-arrow" aria-hidden="true">›</span>
               </a>
@@ -198,6 +216,17 @@
 
     <main class="main">
       <section class="hero">
+        <video
+          class="hero__video"
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="./images/hero-section.jpg"
+          aria-hidden="true"
+        >
+          <source src="./images/Hero-section-video.mp4" type="video/mp4" />
+        </video>
         <div class="hero__container container">
           <div class="hero__content">
             <h1 class="hero__title">Твоя територія догляду</h1>
@@ -311,6 +340,195 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section id="comparison" class="comparison">
+        <div class="comparison__container container">
+          <header class="comparison__header">
+            <h2 class="comparison__title">Гід по формулах догляду</h2>
+            <p class="comparison__subtitle">
+              Порівняльна таблиця активних компонентів та ефектів для вибору засобів під твій тип бороди
+            </p>
+          </header>
+
+          <div class="comparison__table-wrapper" tabindex="0" role="region" aria-label="Таблиця порівняння засобів догляду">
+            <table class="comparison__table">
+              <caption class="comparison__caption">
+                Характеристики лінійок догляду M-Corner: тип бороди, активні інгредієнти, ароматичний профіль та об'єм
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" class="comparison__th">Тип бороди / Потреба</th>
+                  <th scope="col" class="comparison__th">Рекомендований засіб</th>
+                  <th scope="col" class="comparison__th">Основні компоненти</th>
+                  <th scope="col" class="comparison__th">Аромат</th>
+                  <th scope="col" class="comparison__th">Фінішний ефект</th>
+                  <th scope="col" class="comparison__th">Об'єм</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="comparison__row">
+                  <th scope="row" class="comparison__td comparison__td--type">Щетина / коротка борода (до 1 см)</th>
+                  <td class="comparison__td comparison__td--name">M-Corner Daily Light Oil</td>
+                  <td class="comparison__td">Олія жожоба, аргани, вітамін E</td>
+                  <td class="comparison__td">Кедр & бергамот</td>
+                  <td class="comparison__td">Зволоження шкіри, зняття свербежу, м'якість</td>
+                  <td class="comparison__td comparison__td--volume">30 мл</td>
+                </tr>
+                <tr class="comparison__row">
+                  <th scope="row" class="comparison__td comparison__td--type">Середня класична (1–5 см)</th>
+                  <td class="comparison__td comparison__td--name">Conditioning Beard Balm</td>
+                  <td class="comparison__td">Бджолиний віск, масло ши, солодкий мигдаль</td>
+                  <td class="comparison__td">Сандал & тютюнове листя</td>
+                  <td class="comparison__td">Легка фіксація форми, захист, матовий ефект</td>
+                  <td class="comparison__td comparison__td--volume">50 мл</td>
+                </tr>
+                <tr class="comparison__row">
+                  <th scope="row" class="comparison__td comparison__td--type">Довга та густа борода (від 5 см)</th>
+                  <td class="comparison__td comparison__td--name">Heavy Beard Elixir</td>
+                  <td class="comparison__td">Олія чорного кмину, рицинова, кератин</td>
+                  <td class="comparison__td">Морений дуб & бурбон</td>
+                  <td class="comparison__td">Дисципліна волосини, глибоке живлення, легкий глянець</td>
+                  <td class="comparison__td comparison__td--volume">50 мл</td>
+                </tr>
+                <tr class="comparison__row">
+                  <th scope="row" class="comparison__td comparison__td--type">Чутлива шкіра / після контуру</td>
+                  <td class="comparison__td comparison__td--name">Soothe & Calm Post-Shave</td>
+                  <td class="comparison__td">Алое вера, екстракт гамамелісу, D-пантенол</td>
+                  <td class="comparison__td">М'ята & крижаний евкаліпт</td>
+                  <td class="comparison__td">Зняття подразнення, антисептичний бар'єр, охолодження</td>
+                  <td class="comparison__td comparison__td--volume">100 мл</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="comparison__hint">← Прокручуйте таблицю горизонтально →</p>
+        </div>
+      </section>
+
+      <section id="booking" class="booking">
+        <div class="booking__container container">
+          <header class="booking__header">
+            <h2 class="booking__title title">Запис на консультацію</h2>
+            <p class="booking__subtitle">
+              Отримай персональні рекомендації з догляду або завітай на демонстрацію у наш Concept-Store
+            </p>
+          </header>
+
+          <form action="#" method="post" class="booking__form">
+            <fieldset class="booking__fieldset">
+              <legend class="booking__legend">Деталі запису</legend>
+
+              <div class="booking__grid">
+                <div class="booking__field">
+                  <label for="booking-name" class="booking__label">
+                    Ім'я <span class="booking__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="booking-name"
+                    name="name"
+                    class="booking__input"
+                    placeholder="Олександр"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="booking__field">
+                  <label for="booking-phone" class="booking__label">
+                    Телефон <span class="booking__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="booking-phone"
+                    name="phone"
+                    class="booking__input"
+                    placeholder="+380 (__) ___-__-__"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <div class="booking__field">
+                  <label for="booking-email" class="booking__label">Email</label>
+                  <input
+                    type="email"
+                    id="booking-email"
+                    name="email"
+                    class="booking__input"
+                    placeholder="alex@domain.com"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="booking__field">
+                  <label for="booking-service" class="booking__label">Послуга / Тема звернення</label>
+                  <select id="booking-service" name="service" class="booking__select">
+                    <option value="beard">Підбір догляду для бороди</option>
+                    <option value="hair">Підбір стайлінгу для волосся</option>
+                    <option value="box">Індивідуальний подарунковий бокс</option>
+                    <option value="store-visit">Візит у Concept-Store</option>
+                  </select>
+                </div>
+
+                <div class="booking__radio-group">
+                  <span class="booking__label">Формат консультації:</span>
+                  <div class="booking__radios">
+                    <label class="booking__radio-label">
+                      <input
+                        type="radio"
+                        name="format"
+                        value="store"
+                        class="booking__radio"
+                        checked
+                      />
+                      Офлайн у Concept-Store
+                    </label>
+                    <label class="booking__radio-label">
+                      <input
+                        type="radio"
+                        name="format"
+                        value="telegram"
+                        class="booking__radio"
+                      />
+                      Онлайн у Telegram
+                    </label>
+                  </div>
+                </div>
+
+                <div class="booking__field booking__field--full">
+                  <label for="booking-message" class="booking__label">Коментар або побажання</label>
+                  <textarea
+                    id="booking-message"
+                    name="message"
+                    rows="4"
+                    class="booking__textarea"
+                    placeholder="Вкажіть особливості шкіри, бороди або зручний час для візиту..."
+                  ></textarea>
+                </div>
+
+                <div class="booking__field booking__field--full">
+                  <label class="booking__checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      class="booking__checkbox"
+                      required
+                    />
+                    Погоджуюся з умовами <a href="#agreement" class="booking__link">договору оферти</a> та обробкою даних
+                  </label>
+                </div>
+              </div>
+
+              <div class="booking__submit">
+                <button type="submit" class="booking__btn btn">
+                  Надіслати заявку
+                </button>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </section>
 

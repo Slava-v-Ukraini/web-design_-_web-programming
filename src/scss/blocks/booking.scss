@@ -1,0 +1,283 @@
+.booking {
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    @include padding-inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @include mobile {
+      gap: 24px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $color-text-primary;
+
+    @include mobile {
+      font-size: 24px;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    color: $color-text-secondary;
+    max-width: 600px;
+    line-height: 1.5;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 820px;
+  }
+
+  &__fieldset {
+    border: 1px solid $color-border;
+    border-radius: $border-radius-base;
+    background-color: $color-bg-elevated;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+
+    @include mobile {
+      padding: 24px 16px;
+      gap: 20px;
+    }
+  }
+
+  &__legend {
+    padding: 0 16px;
+    color: $color-accent-copper;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-text-primary;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__required {
+    color: $color-accent-copper;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $color-border;
+    border-radius: calc($border-radius-base / 2);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+
+    &::placeholder {
+      color: $color-text-muted;
+    }
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent-copper;
+      background-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(197, 131, 97, 0.25);
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C58361' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 40px;
+
+    option {
+      background-color: $color-bg-elevated;
+      color: #ffffff;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  &__radio-group {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__radios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: $color-text-secondary;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &__radio {
+    accent-color: $color-accent-copper;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  &__checkbox-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__checkbox-label {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: $color-text-secondary;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    accent-color: $color-accent-copper;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  &__link {
+    color: $color-accent-copper;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__submit {
+    align-self: flex-start;
+
+    @include mobile {
+      align-self: stretch;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $color-accent-copper;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 16px 36px;
+    border: none;
+    border-radius: calc($border-radius-base / 2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: $color-accent-hover;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 3px;
+    }
+
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
